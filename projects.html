@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Python Backend Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="/Resources/css/styles.css" />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <span class="text-xl font-bold text-gray-800">Portfolio</span>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="/index.html"
+              class="nav-link text-gray-700 font-medium flex items-center space-x-1 transition-colors duration-300"
+            >
+              <i data-feather="home" class="w-4 h-4"></i>
+              <span>Home</span>
+            </a>
+            <a
+              href="#"
+              class="nav-link text-gray-700 font-medium flex items-center space-x-1 transition-colors duration-300"
+            >
+              <i data-feather="briefcase" class="w-4 h-4"></i>
+              <span>My Brand</span>
+            </a>
+            <a
+              href="/projects.html"
+              class="nav-link text-blue-600 font-medium flex items-center space-x-1 transition-colors duration-300"
+            >
+              <i data-feather="folder" class="w-4 h-4"></i>
+              <span>Projects</span>
+            </a>
+            <a
+              href="/about.html"
+              class="nav-link text-gray-700 font-medium flex items-center space-x-1 transition-colors duration-300"
+            >
+              <i data-feather="user" class="w-4 h-4"></i>
+              <span>About Me</span>
+            </a>
+            <a
+              href="/contact.html"
+              class="nav-link text-gray-700 font-medium flex items-center space-x-1 transition-colors duration-300"
+            >
+              <i data-feather="mail" class="w-4 h-4"></i>
+              <span>Contact</span>
+            </a>
+          </div>
+          <div class="md:hidden flex items-center">
+            <button id="mobile-menu-button" class="text-gray-700">
+              <i data-feather="menu" class="w-6 h-6"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="py-20 min-h-screen pt-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            My <span class="text-blue-600">Projects</span>
+          </h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            A collection of my technical work showcasing diverse skills across
+            development, IoT, and design.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+            data-aos="fade-up"
+          >
+            <div class="h-48 bg-blue-100 overflow-hidden">
+              <img
+                src="http://static.photos/technology/1024x576/1"
+                alt="REST API Project"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                REST API with Python Flask
+              </h3>
+              <p class="text-gray-600 mb-4">
+                A performant RESTful API built with Flask framework implementing
+                CRUD operations, authentication, and rate limiting.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >Python</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >Flask</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >REST</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="h-48 bg-green-100 overflow-hidden">
+              <img
+                src="http://static.photos/technology/1024x576/2"
+                alt="Budget Tracker"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Budget Tracker Web App
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Capstone project featuring a full-stack budgeting application
+                with expense tracking, reporting, and user authentication.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >Python</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >JavaScript</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >HTML/CSS</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="h-48 bg-purple-100 overflow-hidden">
+              <img
+                src="http://static.photos/technology/1024x576/3"
+                alt="Arduino Projects"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Arduino IoT Projects
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Collection of Arduino projects on TinkCAD including home
+                automation prototypes and sensor monitoring systems.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >Arduino</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >IoT</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >TinkCAD</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+            data-aos="fade-up"
+          >
+            <div class="h-48 bg-yellow-100 overflow-hidden">
+              <img
+                src="http://static.photos/technology/1024x576/4"
+                alt="GP Calculator"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                CLI GPA Calculator
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Command-line grade point calculator that processes course inputs
+                and calculates weighted averages with reporting.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >Python</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >CLI</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="h-48 bg-red-100 overflow-hidden">
+              <img
+                src="http://static.photos/technology/1024x576/5"
+                alt="Weather App"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Weather Forecast App
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Collaborative web application providing real-time weather data
+                using API integration with location-based services.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >JavaScript</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >API</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >Collaboration</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="h-48 bg-indigo-100 overflow-hidden">
+              <img
+                src="http://static.photos/technology/1024x576/6"
+                alt="ALX Projects"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                ALX Coding Projects
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Collection of small-scale programming challenges and
+                implementations completed during ALX training.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >Python</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >Bash</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >C</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7 -->
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+            data-aos="fade-up"
+          >
+            <div class="h-48 bg-pink-100 overflow-hidden">
+              <img
+                src="http://static.photos/technology/1024x576/7"
+                alt="UI/UX Designs"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Mobile UI/UX Designs
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Two complete mobile application designs with wireframes,
+                prototypes, and user experience documentation.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >Figma</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >UI/UX</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full"
+                  >Prototyping</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Placeholder for Future Projects -->
+          <div
+            class="bg-gray-50 border-2 border-dashed border-gray-300 rounded-xl flex flex-col items-center justify-center min-h-[340px]"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="text-center p-8">
+              <i
+                data-feather="plus"
+                class="w-12 h-12 text-gray-400 mx-auto mb-4"
+              ></i>
+              <h3 class="text-lg font-medium text-gray-700 mb-2">
+                More Coming Soon
+              </h3>
+              <p class="text-gray-500 text-sm">
+                Currently working on new projects
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-white text-lg font-semibold mb-4">Portfolio</h3>
+            <p class="mb-4">
+              Creating innovative technical solutions with expertise across
+              multiple domains.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://github.com/cj-flute"
+                class="text-gray-400 hover:text-white transition-colors duration-300"
+              >
+                <i data-feather="github" class="w-5 h-5"></i>
+              </a>
+              <a
+                href="www.linkedin.com/in/chijioke-ezembadiwe-22443419a"
+                class="text-gray-400 hover:text-white transition-colors duration-300"
+              >
+                <i data-feather="linkedin" class="w-5 h-5"></i>
+              </a>
+              <a
+                href="https://x.com/Cjflute"
+                class="text-gray-400 hover:text-white transition-colors duration-300"
+              >
+                <i data-feather="twitter" class="w-5 h-5"></i>
+              </a>
+              <a
+                href="https://wa.me/message/BJ7FNHFROSPTL1"
+                class="text-gray-400 hover:text-white transition-colors duration-300"
+              >
+                <i data-feather="phone" class="w-5 h-5"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="/index.html"
+                  class="hover:text-white transition-colors duration-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-white transition-colors duration-300"
+                  >My Brand</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/projects.html"
+                  class="text-white hover:text-blue-300 transition-colors duration-300"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/about.html"
+                  class="hover:text-white transition-colors duration-300"
+                  >About Me</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/contact.html"
+                  class="hover:text-white transition-colors duration-300"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white text-lg font-semibold mb-4">Services</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-white transition-colors duration-300"
+                  >Backend Development</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-white transition-colors duration-300"
+                  >IT Solutions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-white transition-colors duration-300"
+                  >Cyber Security</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-white transition-colors duration-300"
+                  >UI/UX Design</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-white transition-colors duration-300"
+                  >IoT Development</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white text-lg font-semibold mb-4">Contact</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center space-x-2">
+                <i data-feather="mail" class="w-5 h-5"></i>
+                <a
+                  href="mailto:chijiokeezembadiwe@gmail.com"
+                  class="hover:text-white transition-colors duration-300"
+                  >chijiokeezembadiwe@gmail.com</a
+                >
+              </li>
+              <li class="flex items-center space-x-2">
+                <i data-feather="phone" class="w-5 h-5"></i>
+                <span>Available upon request</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i data-feather="map-pin" class="w-5 h-5"></i>
+                <span>Based in Nigeria</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+          <p>&copy; 2025 Portfolio. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Initialize animations
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+      });
+
+      // Initialize mobile menu
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          // You would implement mobile menu toggle functionality here
+          alert("Mobile menu would open here in a complete implementation");
+        });
+
+      // Replace feather icons
+      feather.replace();
+    </script>
+  </body>
+</html>
