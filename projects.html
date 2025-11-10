@@ -28,7 +28,7 @@
               <span>Home</span>
             </a>
             <a
-              href="#"
+              href="/Brand/brand_index.html"
               class="nav-link text-gray-700 font-medium flex items-center space-x-1 transition-colors duration-300"
             >
               <i data-feather="briefcase" class="w-4 h-4"></i>
@@ -419,7 +419,7 @@
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/Brand/brand_index.html"
                   class="hover:text-white transition-colors duration-300"
                   >My Brand</a
                 >
@@ -524,12 +524,23 @@
       });
 
       // Initialize mobile menu
-      document
-        .getElementById("mobile-menu-button")
-        .addEventListener("click", function () {
-          // You would implement mobile menu toggle functionality here
-          alert("Mobile menu would open here in a complete implementation");
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const mobileMenuClose = document.getElementById("mobile-menu-close");
+
+      mobileMenuButton.addEventListener("click", function () {
+        mobileMenu.classList.add("active");
+        document.body.style.overflow = "hidden";
+      });
+
+      // Close menu when clicking on a link
+      const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+      mobileMenuLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          mobileMenu.classList.remove("active");
+          document.body.style.overflow = "auto";
         });
+      });
 
       // Replace feather icons
       feather.replace();
